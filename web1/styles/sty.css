@@ -1,0 +1,52 @@
+  h2.st1 {
+      color: aqua;
+      /* 英文字大小寫轉換--字母頭改為大寫 */
+      text-transform: capitalize;
+  }
+
+  .st2 {
+      color: blue;
+      /* 文字修飾--刪除線 */
+      text-decoration: line-through;
+  }
+
+  .col1 {
+      color: blueviolet;
+  }
+
+  .col2 {
+      color: aquamarine;
+  }
+
+  .siz1 {
+      /* 修改字體大小--2倍 */
+      font-size: 2em;
+  }
+
+  .under1 {
+      /* 英文字大小寫轉換--全部大寫 */
+      text-transform: uppercase;
+  }
+
+  .sty1 {
+      /* 字型類型--斜體字 */
+      font-style: italic;
+  }
+
+  .colh1 {
+      color: red;
+  }
+
+  h1 {
+      color: aquamarine;
+  }
+
+  #colh1 {
+      color: black;
+  }
+
+  p {
+      color: pink;
+      text-decoration: underline;
+      font-size: 20px;
+  }

@@ -1,0 +1,23 @@
+.list1 {
+    list-style-type: none;
+    list-style-image: url(../imges/arrow.jpg);
+    /* 邊框樣式 大小->樣式->顏色 */
+    border: 5px dashed red;
+    /* 邊框樣式圓角 左上 右上 右下 左下 */
+    border-radius: 10px 20px 30px 40px;
+}
+
+.list2 {
+    list-style-image: none;
+    list-style-type: upper-alpha;
+}
+
+.in {
+    background-color: orange;
+    list-style-position: inside;
+}
+
+.out {
+    background-color: orange;
+    list-style-position: outside;
+}

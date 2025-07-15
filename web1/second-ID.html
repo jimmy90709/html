@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的使用--自訂樣式(ID)</title>
+    <style>
+        #theH1 {
+            color: red
+        }
+    </style>
+
+</head>
+<!-- id>Class>Type -->
+
+<body>
+    <!-- JS控制會執行一次 所以只有apple變藍色 -->
+    <h2 id="theH1">apple</h2>
+    <h2 id="theH1">orang</h2>
+    <script>
+        document.getElementById("theH1").style.color = "blue";
+    </script>
+</body>
+
+</html>

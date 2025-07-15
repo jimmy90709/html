@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module17</title>
+    <style>
+        .list {
+            background-color: aqua;
+            /* 自動出現卷軸 */
+            overflow: auto;
+        }
+
+        .list li {
+            width: 7em;
+            float: left;
+            border-right: 3px solid black;
+            /* 取消ul符號 */
+            list-style-type: none;
+            line-height: 2.5em;
+        }
+
+        .list li a {
+            text-align: center;
+            /* 將元素視為區塊 */
+            display: block;
+        }
+
+        .list li a:hover {
+            background-color: blue;
+            color: #FFFFFF;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        .box {
+            background-color: yellow;
+        }
+
+        .label1 {
+            background-color: orange;
+        }
+
+        .span2 {
+            /* 請在這裡加上visibility屬性，並將span2設為隱藏 */
+            visibility: hidden;
+        }
+
+
+        .box:hover .span1 {
+            /* 請在這裡加上display屬性將span1設為消失 */
+            display: none;
+        }
+
+        .box:hover .span2 {
+            /* 請在這裡加上visibility屬性將span2設為顯示 */
+            visibility: visible;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 75px;
+            border: 3px solid red;
+            overflow: auto;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <ul class="list">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="list.html">關於</a></li>
+        <li><a href="https://www.ispan.com.tw/">資展國際</a></li>
+        <li><a href="mailto:jimmy90709@yahoo.com.tw">聯絡</a></li>
+    </ul>
+    <h1>我是h1</h1>
+    <h2>我是h2</h2>
+    <div class="box">
+        <span class="span1">span1</span>
+        <label for="" class="label1">
+            <span class="span2">span2</span>
+        </label>
+    </div>
+    <div class="box2">aaaaaaaaaaaaaaaaaaaaa消失消失消失消失消失消失消失消失</div>
+</body>
+
+</html>

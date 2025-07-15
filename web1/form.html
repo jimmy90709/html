@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單</title>
+    <style>
+        .sat1 {
+            width: 500px;
+            border-bottom: 3px dashed #7B7B7B;
+            margin: 10px;
+            padding-bottom: 10px;
+        }
+
+        .sat2 {
+            width: 500px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .sty {
+            /* inline設寬高為無效 但因需要浮動必須設定 */
+            width: 100px;
+            /* border: 1px solid red; */
+            /* 向左浮動 */
+            float: left;
+            /* 向右對齊 */
+            text-align: right;
+        }
+
+        fieldset {
+            width: 600px;
+            border: 5px solid blue;
+            border-radius: 30px;
+            margin: 10px;
+        }
+
+        legend {
+            margin-left: 50px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <!-- 輸入文字type="text"顯示文字alue="guest"設定可輸入字元數maxlength="6" -->
+        <fieldset>
+            <legend>個人資料</legend>
+            <div class="sat1">
+                <label for="account1" class="sty">姓名:</label>
+                <!-- 滑鼠首個位子autofocus 背景顯示placeholder 是否記住資料autocomplete -->
+                <input type="text" name="account" id="account1" autofocus placeholder="guest" autocomplete="off"
+                    size="10">
+            </div>
+            <div class="sat1">
+                <label for="" class="sty">性別</label>
+                <label>
+                    <input type="radio" name="gender" value="male" id="">男
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" id="">女
+                </label>
+            </div>
+            <div class="sat1">
+                <label for="pwd1" class="sty">密碼:</label>
+                <input type="password" id="pwd1" name="pwd" maxlength="6" required>
+            </div>
+            <div class="sat1">
+                <label for="" class="sty">生日:</label>
+                <!-- 輸入生日 預設2000/01/01 -->
+                <input type="date" name="date" id="" value="2000-01-01">
+            </div>
+            <div class="sat1">
+                <label for="" class="sty">E-mail:</label>
+                <!--輸入信箱會檢查有沒有@ -->
+                <input type="email" name="email" id="">
+            </div>
+            <div class="sta1">
+                <label for="" class="sty">身份證字號:</label>
+                <input type="text" name="idcode" maxlength="10" pattern="[a-zA-Z]{1}[1289]{1}\d{8}" id="">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>地址</legend>
+            <div class="sat1">
+                <label class="sty">縣市:</label>
+                <select name="add1" id="">
+                    <option value="" selected disabled>請選擇</option>
+                    <option value="TPE">台北市</option>
+                    <option value="TPH">新北市</option>
+                    <option value="TYU">桃園市</option>
+                    <option value="HSC">新竹市</option>
+                </select>
+            </div>
+            <div class="sat1">
+                <label class="sty">完整地址</label>
+                <input type="text" name="add2" size="30">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>個人資料2</legend>
+            <div class="sat1">
+                <label class="sty">照片</label>
+                <!-- 可複選multiple -->
+                <input type="file" name="file" accept=".png.jpg.webp" multiple>
+            </div>
+            <div class="sat1">
+                <label for="" class="sty">喜歡的水果:</label>
+                <input type="text" name="fruit_lsit" list="fruit">
+                <datalist id="fruit">
+                    <option value="Apple">蘋果</option>
+                    <option value="Grape"></option>
+                    <option value="Banana">
+                </datalist>
+            </div>
+            <div class="sat1">
+                <label class="sty">興趣</label>
+                <label>
+                    <input type="checkbox" name="hobby" value="music" id="">音樂
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="sport" id="">運動
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="reading" id="">閱讀
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="movie" id="">電影
+                </label>
+            </div>
+            <div class="sat1">
+                <label for="comment1" class="sty">意見:</label>
+                <textarea name="comment" id="comment1" cols="40" rows="5" disabled>馬克斯·艾米利安·維斯塔潘（荷蘭語：Max Emilian Verstappen，發音：[ˈmɑks fɛrˈstɑpə(n)]；1997年9月30日—），荷蘭賽車手，於2021年、2022年、2023年和2024年贏得一級方程式賽車世界冠軍，現時效力於紅牛車隊。維斯塔潘保有一級方程式單季最多分站冠軍、單季最多頒獎台完賽、最長連續分站冠軍、最長連續桿位等紀錄。
+                </textarea>
+            </div>
+            <div class="sat2">
+                <input type="submit" value="送出">
+                <input type="reset" value="清除" disabled>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

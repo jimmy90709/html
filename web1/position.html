@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .static {
+            border: 3px solid red;
+            padding: 5px;
+            background-color: #FFECEC;
+            /* 固定位置 */
+            position: static;
+        }
+
+        .relative1 {
+            border: 3px solid blue;
+            padding: 5px;
+            background-color: #D2E9FF;
+            /* 相對位置 */
+            position: relative;
+        }
+
+        .relative2 {
+            position: relative;
+            /* 請加上top or right or left or bottom調整邊界距離 */
+            bottom: 50px;
+            right: 50px;
+        }
+
+        .fixed {
+            width: 200px;
+            border: 3px solid green;
+            background-color: #E8FFF5;
+            padding: 5px;
+            /* 請設定position:fixed */
+            position: fixed;
+            /* 請加上top or right or left or bottom調整邊界距離 */
+            right: 0;
+            bottom: 100px;
+        }
+
+        .static_absu {
+            width: 600px;
+            height: 400px;
+            padding: 5px;
+            border: 3px solid purple;
+            background-color: #EBD3E8;
+            /* 請設定position:static */
+            position: static;
+
+        }
+
+        .absolute_sta {
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 3px solid orange;
+            background-color: #FFE4CA;
+            position: absolute;
+            /* 請加上top or right or left or bottom來調整邊界距離 */
+            right: 0;
+        }
+
+        .relative_absu {
+            width: 600px;
+            height: 400px;
+            padding: 5px;
+            border: 3px solid purple;
+            background-color: #EBD3E8;
+            /* 請設定position:relative */
+            position: relative;
+        }
+
+
+
+        .absolute_rel {
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 3px solid orange;
+            background-color: #FFE4CA;
+            position: absolute;
+            /* 請加上top or right or left or bottom來調整邊界距離 */
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>static</h2>
+    <div class="static">static</div>
+    <h2>relative</h2>
+    <div class="relative1">relative1</div>
+    <div class="relative1 relative2">relative2</div>
+    <h2>fixed</h2>
+    <div class="fixed">fixed</div>
+    <h2>absolute1</h2>
+    <div class="static_absu">static
+        <div class="absolute_sta">absolute</div>
+    </div>
+    <h2>absolute2</h2>
+    <div class="relative_absu">relative
+        <div class="absolute_rel">absolute</div>
+    </div>
+
+</body>
+
+</html>

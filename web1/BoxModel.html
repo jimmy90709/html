@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方塊模型</title>
+    <style>
+        * {
+            /* 元素與邊框 */
+            padding: 0;
+            /* 邊界空白距離 */
+            margin: 0;
+        }
+
+        img {
+            /* 方塊樣式修改為(border-box)包含圖片邊框 為設定的400px */
+            box-sizing: border-box;
+            /* 圖片寬為400px */
+            width: 400px;
+            /* 邊寬設定 大小 樣式 顏色 */
+            border: 3px solid red;
+            /* 圓角設定 */
+            border-radius: 30px;
+            margin: 20px;
+        }
+
+        /* float: none(預設不符動)|left(浮動左)|right(浮動右) */
+        .img1 {
+            /* 浮動到左邊 */
+            float: left;
+        }
+
+        .img2 {
+            /* 浮動到右邊 */
+            float: right;
+        }
+
+        /* clear:none(預設)|left(禁止浮動左)|right(禁止浮動右)|both(禁止左右浮動) */
+        p {
+            /* 禁止左右浮動 */
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>MLB／道奇超慘6連敗！3連星打陷低潮 老將洛哈斯喊話：不能只靠他們</h1>
+    <img class="img1" src="imges/p1.webp" alt=""><img class="img2" src="imges/p1.webp" alt="">
+
+    <p>道奇9日經歷10局以2：3遭釀酒人逆轉後，近期吞下本季最慘6連敗，主力「MVP三連星」串聯也陷入低潮，身為老將的洛哈斯（Miguel
+        Rojas）站出來緩頰，「他們正在努力找回手感」，並坦言近期輸球真的很痛，也喊話「是時候挺身而出了！」</p>
+    <p>本場道奇隊敲出5支安打，老將洛哈斯是唯一繳出雙安的打者，球隊全場的2分都是他跑回來，可惜延長賽道奇隊被敲出再見安打，吞下本季最長6連敗。「MVP三連星」大谷翔平、貝茲（Mookie Betts）、佛里曼（Freddie
+        Freeman），近期打擊串聯不佳，系列賽合計僅敲出4支安打。</p>
+</body>
+
+</html>
